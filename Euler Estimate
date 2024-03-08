@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class EulerEstimate {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter a number of iterations (1-20):");
+        int n = scanner.nextInt();
+
+        while (n < 1 || n > 20) {
+            System.out.println("Invalid input. Please enter a number of iterations between 1 and 20:");
+            n = scanner.nextInt();
+        }
+
+        System.out.println("Enter a value for x in e^x:");
+        double x = scanner.nextDouble();
+
+        double estimatedE = estimateE(n, x);
+        double actualE = Math.exp(x);
+
+        System.out.println("Your value of estimate of e^" + x + ": " + estimatedE);
+        System.out.println("Distance from the actual value of e^" + x + ": " + Math.abs(estimatedE - actualE));
+    }
+
+    public static double estimateE(int n, double x) {
+        double sum = 0;
+
+        for (int i = 0; i <= n; i++) {
+            sum += Math.pow(x, i) / factorial(i);
+        }
+
+        return sum;
+    }
+
+    public static int factorial(int n) {
+        int result = 1;
+
+        for (int i = 1; i <= n; i++) {
+            result *= i;
+        }
+
+        return result;
+    }
+}
