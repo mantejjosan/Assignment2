@@ -1,0 +1,39 @@
+ public class Advantage {
+    public static void main(String[] args) {
+        int player1Wins = 0;
+        int player2Wins = 0;
+        int ties = 0;
+
+        final int NUM_SIMULATIONS = 10000;
+
+        for (int i = 0; i < NUM_SIMULATIONS; i++) {
+            int rollPlayer1 = rollWhiteDice();
+            int rollPlayer2 = rollGreenDice();
+
+            if (rollPlayer1 > rollPlayer2) {
+                player1Wins++;
+            } else if (rollPlayer1 < rollPlayer2) {
+                player2Wins++;
+            } else {
+                ties++;
+            }
+        }
+
+        System.out.printf("Score:%n");
+        System.out.printf("Player 1: %d%n", player1Wins);
+        System.out.printf("Player 2: %d%n", player2Wins);
+        System.out.printf("[%d ties]%n", ties);
+
+        double player1Advantage = (double) player1Wins / (player1Wins + player2Wins);
+        System.out.printf("Based on this simulation, Player 1 is %.8f times more likely to win.%n", player1Advantage);
+    }
+
+    private static int rollWhiteDice() {
+        return (int) (Math.random() * 6) + 1 + (int) (Math.random() * 6) + 1;
+    }
+
+    private static int rollGreenDice() {
+        int die1 = (int) (Math.random() * 6) + 1;
+        return die1 == 5 ? die1 + (int) (Math.random() * 6) + 1 : die1;
+    }
+}
