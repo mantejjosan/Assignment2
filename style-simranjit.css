@@ -1,0 +1,17 @@
+html{
+	margin:0px;
+	padding:20px;
+	font-family: 'Varela', sans-serif;
+	background-color: black;
+	color: #ffffff;
+}
+
+h1, h2, h3{
+	color: #2afeb7;
+}
+
+a{
+	color: #8a2be2;
+	font-weight: bold;
+	text-decoration: none;
+}
