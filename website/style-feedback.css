@@ -1,0 +1,53 @@
+/* header, footer, default styles already applied through header-footer.css */
+
+.feedback-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f9fa; /* Example background color */
+}
+
+.feedback-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.feedback-container h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Example button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}

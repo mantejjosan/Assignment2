@@ -1,0 +1,143 @@
+/* this file contains the style that are repetitive */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Unbounded', sans-serif;
+	overflow-x: hidden; /* Prevent horizontal scrolling */
+	
+}
+
+
+section{
+	width: 100vw;
+	margin-bottom: 100px;
+	margin: 0 auto; /* Center the section horizontally */
+
+}
+
+h1{
+	font-size:3.1rem;
+}
+
+h2{
+	font-size:2.85rem;
+}
+
+p{ 
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+/* header styles-------------------------------------------- */
+
+header {
+	/* these three lines make the navbar stick to the top of the screen always */
+	position: sticky;
+	top:0;
+	z-index: 1000;
+	
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+	backdrop-filter: blur(20px); 
+}
+
+#logo-name{
+	font-weight: 100px;
+	font-size: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Adjust as needed */
+    margin-right: 10px;
+	margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Example text color */
+}
+
+nav ul li a:hover {
+    color: #555; /* Example hover color */
+}
+
+
+/* footer styles--------------------------------------------------- */
+
+
+.footer {
+    background-color: black; /* Example background color */
+    padding: 50px 0; /* Adjust padding as needed */
+    text-align: center;
+	margin-bottom:0px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.footer-logo img {
+    height: 40px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white; /* Example text color */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.footer-bottom p {
+    font-size: 14px; /* Example font size */
+    color: #555; /* Example text color */
+}

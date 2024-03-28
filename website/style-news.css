@@ -1,0 +1,86 @@
+/* header, footer, default styles already applied through header-footer.css  */
+
+h2{
+	text-align: center;
+	margin: 40px;
+}
+
+.featured-news {
+    background-color: #f0f0f0; /* Background color for the section */
+    padding: 20px; /* Padding around the section */
+}
+
+.featured-news article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featured-news img {
+    width: 100%; /* Make the image responsive */
+    max-width: 500px; /* Limit the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+.featured-news h2 {
+    font-size: 24px; /* Example font size for the headline */
+    margin-bottom: 10px; /* Add space below the headline */
+}
+
+.featured-news p {
+    font-size: 16px; /* Example font size for the excerpt */
+    margin-bottom: 20px; /* Add space below the excerpt */
+}
+
+.featured-news a {
+    text-decoration: none; /* Remove underline from the link */
+    color: #007bff; /* Example link color */
+    font-weight: bold; /* Make the link bold */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.featured-news a:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+.latest-news {
+	width: 80%;
+	padding: 0px 30px;
+    margin-top: 30px; /* Add space above the section */
+}
+
+.latest-news article {
+	display: flex; /* Use flexbox for layout */
+    margin-bottom: 20px; /* Add space between articles */
+}
+
+.latest-news h3 {
+    font-size: 20px; /* Example font size for the headline */
+    margin-bottom: 5px; /* Add space below the headline */
+}
+
+.latest-news p {
+    font-size: 14px; /* Example font size for the publication date */
+    color: #666; /* Example color for the publication date */
+}
+
+.latest-news {
+    margin-top: 30px; /* Add space above the section */
+}
+
+.article-content {
+    flex: 1; /* Take up remaining space */
+    padding-right: 20px; /* Add space between text and image */
+}
+
+.article-image {
+    flex-shrink: 0; /* Don't allow image to shrink */
+    width: 200px; /* Adjust image width as needed */
+}
+
+.article-image img {
+    width: 100%; /* Make image fill container */
+    height: auto; /* Maintain aspect ratio */
+}

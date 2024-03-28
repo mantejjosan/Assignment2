@@ -1,0 +1,107 @@
+/* header, footer, default styles already applied through header-footer.css */
+
+.hero {
+    overflow: hidden;
+    color: #fff; /* Example text color */
+    text-align: center; /* Center align text */
+    height: 100vh; /* Ensure the hero section covers the entire viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-heading{
+	font-weight: lighter;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	width: 35%;
+}
+.hero-section-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px; /* Adjust as needed */
+    text-align: left;
+}
+
+.hero-section-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+.section-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px; /* Adjust as needed */
+    text-align: center;
+}
+
+.top-products-span {
+    color: #eaedf5;
+    background-image: linear-gradient(252deg, #13d4fd, #598eef 22%, #a64ce2 47%, #cd29db 66%, #f010d7 91%, #f941de);
+}
+
+.product-section-heading{
+	margin-bottom:20px;
+}
+.section-container h1 {
+    font-size: 36px; /* Example font size */
+    font-weight: bold; /* Example font weight */
+    color: #333; /* Example text color */
+    position: absolute;
+    bottom: 50px; /* Adjust as needed */
+    right: 50px; /* Adjust as needed */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Enable flex wrap */
+    justify-content: space-between; /* Add space between cards */
+}
+
+.card {
+    flex-basis: calc(33.33% - 20px); /* Set flex-basis to 33.33% minus margin */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    text-align: left;
+}
+
+.card button {
+    background-color: #cd29db; /* Green background */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px; /* Add some space above the button */
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+	font-family: 'Unbounded', sans-serif;
+	font-size: 20px;
+}
+
+.card button:hover {
+    background-color: #598eef; /* Darker green on hover */
+}
+
+.card h3{
+	margin-top:4px;
+	margin-bottom:6px;
+}
+.product-img{
+	width: 100%;
+	height:auto;
+}

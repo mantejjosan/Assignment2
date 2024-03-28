@@ -1,0 +1,49 @@
+/* header, footer, default styles already applied through header-footer.css  */
+
+.career-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.career-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+	margin-top: 55px;
+}
+
+.job {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: calc(33.33% - 20px);
+}
+
+.job h3 {
+    margin-bottom: 10px;
+}
+
+.job p {
+    margin-bottom: 20px;
+}
+
+.job a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cd29db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.job a:hover {
+    background-color: #598eef;
+}
